@@ -23,7 +23,7 @@ jobs:
       uses: docker/build-push-action@v5
       with:
         push: true
-        tags: devopshint/go-app:${{ github.sha }} , devopshint/go-app:latest
+        tags: sosotechnologies/go-app:${{ github.sha }} , sosotechnologies/go-app:latest
 
   update:
     name: Update Helm Manifests
@@ -44,7 +44,7 @@ jobs:
     
     - name: Commit the changes made
       run: | 
-        git config --global user.name 'devopshint'
-        git config --global user.email 'devopshint@gmail.com'
+        git config --global user.name 'sosotechnologies'
+        git config --global user.email 'sosotech2000@gmail.com'
         git commit -am "updating image tag"
         git push

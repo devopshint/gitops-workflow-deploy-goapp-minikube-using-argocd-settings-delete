@@ -8,7 +8,7 @@ spec:
     namespace: 'default'
   source:
     path: 'chart'
-    repoURL: 'https://github.com/devopshint/gitops-workflow-deploy-goapp-minikube-using-argocd'
+    repoURL: 'https://github.com/sosotechnologies/gitops-workflow-deploy-goapp-minikube-using-argocd'
     targetRevision: HEAD
     helm:
       valueFiles:
